@@ -1,0 +1,30 @@
+h1{
+
+    color:deepskyblue;
+    background-color: cornsilk;
+
+    font-family: cursive;
+
+}
+
+p{
+    font-size: 5;
+    color: organe;
+}
+
+div{
+    color: deepskyblue;
+}
+
+img{
+    border-radius: 8px;
+    width: 50px;
+ 
+}
+
+.elly_pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+}

@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sentiment Analysis</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+
+    <body>
+        <h1> Sentiment Analysis of Game Review</h1>
+        
+    <ul>Model's information</ul>
+        <li>The model used for this anaylsis: {{model}}</li>
+        <li> The model's class are: 
+            {{model.classes_}}
+        </li>
+        <li>Model class count: {{model.class_count_}}</li>
+
+    <ul>The data</ul>
+     <li>
+         <a href="https://github.com/EllyKyles/dsi-flask/tree/master/data">Data Link</a>
+     </li>
+       
+    
+
+
+    </body>
+
+    <body>
+        <h1> New input text</h1>
+
+        <form action="/sentiment" method="POST">
+            <label>Review Text</label>
+            <input type='text' name='review'>
+            <button type='submit'>Submit</button>
+        </form>
+
+
+        <h1>New input text's result</h1>
+        <li>Input text is {{review}}</li>
+
+      
+
+        {% if c0 %}
+            <li> P(Negative(False)|input text) is {{c0}}</li>
+            <li> P(Postive(True)|input text) is {{c1}}</li>
+        {% endif %}
+
+        
+    </body>
+
+    <body>
+        
+            <h1>Elly's Project</h1>
+            <li>
+            <a href="https://github.com/EllyKyles/dsi-flask">Flask-EC2 (this project)</a>
+            </li>
+            <li>
+                <a href="https://github.com/EllyKyles/aws_sagemaker">AWS sagemaker-S3</a>
+            </li>
+               
+            <li>
+                <a href="https://covid.kinestry.io/index.html">Covid19-website</a> 
+            </li>
+            <li>
+                <a href="https://www.kaggle.com/kinestry/covid-kinestry-io-visual-knowledge-recommend">Covid19-Kaggle-submission</a>
+            </li>
+            
+        
+
+        <h1>About Me</h1>
+        <p>Data scientist with a background in actuarial science and extensive professional experience leveraging diverse datasets to derive actionable business insights.</p>
+        <a href="https://www.linkedin.com/in/ellykyles/">Elly's linkedin</a>
+        <div>
+            <img src="https://elly-photo.s3-us-west-1.amazonaws.com/Elly+singapore.jpg" width=200>  
+        </div>
+\
+             
+    </body>
+
+</html>
